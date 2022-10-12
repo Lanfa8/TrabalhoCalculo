@@ -123,6 +123,11 @@ int main() {
 
 	float matrizA[N] = {10, 5, 14.6, 19.4};
 
+	printf("Pressione enter 2 vezes para comecar a calcular!\n");
+	getchar();
+	
+	printf("\n");
+
 	printf("QUESTAO A)\n");
 	calculaPorGaussJacobi(matrizInicialA, matrizA, vAproximacaoGeral);
 	printf("\n\n");
@@ -203,6 +208,8 @@ int main() {
 	printf("\n\n");
 	calculaPorGaussSeidel(matrizInicialF, matrizF, vAproximacaoGeral);
 	printf("-----------------------\\\\----------------\\\\----------------------------------\n\n\n");
+
+	getchar();
 
 	return 0;
 }
